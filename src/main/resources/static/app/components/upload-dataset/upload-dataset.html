@@ -1,0 +1,62 @@
+<div layout="row" layout-align="center start">
+    <div layout="column" flex="50">
+        <md-card md-theme="default" flex>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Upload dataset</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <form name="projectForm">
+                    <div layout="row">
+                        <md-input-container class="md-block" flex="70">
+                            <label for="dataset_name">Dataset Name</label>
+                            <input md-maxlength="30" name="dataset_name" required ng-model="vm.datasetName">
+                        </md-input-container>
+                        <md-input-container class="md-block" flex="30">
+                            <label for="dataset_format">Format</label>
+                            <md-select ng-model="vm.datasetFormat" required>
+                                <md-option ng-value="format" ng-repeat="format in vm.formats">{{format}}</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div layout="row">
+                        <md-input-container flex="70">
+                            <label for="file_url">File URL</label>
+                            <input md-maxlength="255" name="file_url" ng-model="vm.fileUrl">
+                        </md-input-container>
+                        <md-input-container flex="30">
+                            <input class="ng-hide" id="input-file-id" type="file" file-model ng-model="vm.filePath"/>
+                            <md-button class="md-button md-raised" ng-click="vm.openInputFile($event);">Dataset File</md-button>
+                        </md-input-container>
+                    </div>
+                </form>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-primary md-raised" ng-click="vm.addDataset()">
+                    Upload
+                </md-button>
+                <md-button class="md-warn md-raised" ng-click="vm.clearDataset()">
+                    Clear
+                </md-button>
+            </md-card-actions>
+      </md-card>
+
+      <md-card ng-repeat="dataset in vm.datasetsInProgress" md-theme="default" flex>
+          <md-card-title>
+              <md-card-title-text>
+                  <span class="md-headline">{{dataset.name}}</span>
+              </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+              <md-progress-linear md-mode="indeterminate" ng-show="!dataset.loadingStatus"></md-progress-linear>
+              <h2>{{dataset.loadingStatus}}</h2>
+          </md-card-content>
+          <md-card-actions layout="row" layout-align="end center">
+              <md-button class="md-warn md-raised" ng-click="vm.removeDatasetInProgress(dataset)">
+                  Cancel
+              </md-button>
+          </md-card-actions>
+      </md-card>
+  </div>
+</div>

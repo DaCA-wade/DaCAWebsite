@@ -10,8 +10,8 @@
 
     function SingleDatasetCtrl($http) {
         let vm = this;
-        let TRIPLES_URL = "http://localhost:1994/triples/{datasetName}";
-        let QUERY_URL = "http://localhost:1994/sparql/query";
+        let TRIPLES_URL = "https://daca-spaqrl-processor.herokuapp.com/triples/{datasetName}";
+        let QUERY_URL = "https://daca-spaqrl-processor.herokuapp.com/sparql/query";
 
         vm.$onInit = function() {
             getTriples().then(function success(response) {

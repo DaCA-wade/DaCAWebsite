@@ -10,9 +10,9 @@
 
     function CompareDatasetsCtrl($http) {
         let vm = this;
-        let COMPARE_URL = "http://localhost:1999/compare/{operation}/{dataset1}/{dataset2}";
-        let EXPORT_URL = "http://localhost:1999/export/{operation}/{dataset1}/{dataset2}?format=n3";
-        let NAMESPACES_URL = "http://localhost:1994/namespace";
+        let COMPARE_URL = "https://daca-compare.herokuapp.com/compare/{operation}/{dataset1}/{dataset2}";
+        let EXPORT_URL = "https://daca-compare.herokuapp.com/export/{operation}/{dataset1}/{dataset2}?format=n3";
+        let NAMESPACES_URL = "https://daca-spaqrl-processor.herokuapp.com/namespace";
 
 
         vm.operations = ["union", "intersection", "difference", "isomorphism"];

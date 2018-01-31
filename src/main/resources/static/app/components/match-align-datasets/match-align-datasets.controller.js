@@ -11,8 +11,8 @@
     function MatchAlignDatasetsCtrl($http) {
         let vm = this;
 
-        let NAMESPACES_URL = "http://localhost:1994/namespace";
-        let MATCH_ALIGN_URL = "http://localhost:1998/matchalign/{datasetName1}/{datasetName2}";
+        let NAMESPACES_URL = "https://daca-spaqrl-processor.herokuapp.com/namespace";
+        let MATCH_ALIGN_URL = "https://daca-match-align.herokuapp.com/matchalign/{datasetName1}/{datasetName2}";
 
         vm.$onInit = function() {
             getNamespaces().then(function success(response) {

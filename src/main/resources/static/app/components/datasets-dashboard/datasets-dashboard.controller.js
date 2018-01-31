@@ -13,8 +13,8 @@
 
     function DatasetsDashboardCtrl($http) {
         let vm = this;
-        let NAMESPACES_URL = "http://localhost:1994/namespace";
-        let NAMESPACE_STATS_URL = "http://localhost:1994/namespace/stats/{datasetName}";
+        let NAMESPACES_URL = "https://daca-spaqrl-processor.herokuapp.com/namespace";
+        let NAMESPACE_STATS_URL = "https://daca-spaqrl-processor.herokuapp.com/stats/{datasetName}";
 
         vm.$onInit = function() {
             getNamespaces().then(function success(response) {

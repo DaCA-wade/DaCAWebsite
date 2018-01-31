@@ -10,7 +10,7 @@
 
     function UploadDatasetCtrl($http, $timeout) {
         let vm = this;
-        let UPLOAD_DATASET_URL = "http://localhost:1995/upload/{datasetName}";
+        let UPLOAD_DATASET_URL = "https://daca-uploader.herokuapp.com/upload/{datasetName}";
 
         vm.datasetsInProgress = [];
         vm.formats = ["RDF/XML", "RDF/JSON", "RDFa", "JSON-LD", "N-Triples", "Turtle", "N3", "N-Quads"];

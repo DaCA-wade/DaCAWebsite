@@ -9,6 +9,8 @@
   height: 200px;
 }
 
+md-card { min-height: 200px; }
+
 /*
  Dataset visualization
  */

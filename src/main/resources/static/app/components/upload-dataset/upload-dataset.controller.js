@@ -97,12 +97,14 @@
         function uploadDatasetPath(datasetName, format, file) {
             let formData = new FormData();
             formData.set("file", file);
-            formData.set("format", format);
 
             return $http({
                 method: "PUT",
                 url: UPLOAD_DATASET_URL.replace("{datasetName}", datasetName),
                 data: formData,
+                params: {
+                    'format': format
+                },
                 headers: {
                     'Content-Type': undefined
                 }

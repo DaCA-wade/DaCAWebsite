@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc577e0-2b20-4c21-8dad-6164b261842d" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/app/resources/vendors/d3/d3.v3.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/app/resources/vendors/jquery/jquery.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DaCAWebsite.iml" afterPath="$PROJECT_DIR$/DaCAWebsite.iml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="272">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -286,6 +287,27 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="upload-dataset" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DaCAWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DaCAWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DaCAWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DaCAWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+              <item name="d3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -470,7 +492,7 @@
       <workItem from="1517343873077" duration="3323000" />
       <workItem from="1517407397373" duration="9725000" />
       <workItem from="1517427653096" duration="3869000" />
-      <workItem from="1517474042444" duration="134000" />
+      <workItem from="1517474042444" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="Add style for md-card">
       <created>1517435869625</created>
@@ -486,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517442917305</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add jquery and d3 to resources">
+      <created>1517474196870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517474196870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32315000" />
+    <option name="totallyTimeSpent" value="32527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -538,7 +567,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add style for md-card" />
     <MESSAGE value="Add correct endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add correct endpoints" />
+    <MESSAGE value="Add jquery and d3 to resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add jquery and d3 to resources" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -923,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="272">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding />
         </state>
       </provider>
